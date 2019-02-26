@@ -1,0 +1,36 @@
+<h2>Alcool ou gasolina?</h2>
+<script>
+	var pularLinha = function pularLinha(){ document.write("<br>")};
+	var gasolina = 40;
+	var caminhoComGasolina = 480;
+	var consumoDeGasolina = caminhoComGasolina / gasolina;
+	var alcool = 40;
+	var precoDaGasolina = 2.90;
+	var precoDoAlcool = 2.40;
+	var caminhoComAlcool = 300;
+	var consumoDeAlcool = caminhoComAlcool / alcool;
+	var number = 0.314178473;
+	var precoPorKilometroG = precoDaGasolina / consumoDeGasolina;
+	precoPorKilometroA = precoDoAlcool / consumoDeAlcool; 
+
+	document.write("Gasolina: "+ gasolina +"L");
+	pularLinha();
+	document.write("Distancia percorrida: " +caminhoComGasolina +"KM");
+	pularLinha();
+	document.write("Cosumo de gasolina: "+ consumoDeGasolina +"L");
+	pularLinha();
+	document.write("Preço por KM: "+precoPorKilometroG.toFixed(2));
+	pularLinha();
+	document.write("<hr>");
+
+	
+	document.write("Alcool: "+ alcool +"L");
+	pularLinha();
+	document.write("Distancia percorrida: " +caminhoComAlcool +"KM");
+	pularLinha();
+	document.write("Cosumo de gasolina: "+ consumoDeAlcool +"L");
+	pularLinha();
+	document.write("Preço por KM: "+precoPorKilometroA.toFixed(2));
+	pularLinha();
+	document.write("<hr>");
+</script>

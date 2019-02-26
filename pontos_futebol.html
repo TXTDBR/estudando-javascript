@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	function pular(){
+		document.write("</br>");
+	}
+	function mostrar(linha){
+		document.write(linha);
+		pular();
+	}
+
+	function calcularPontos(vitorias, empates){
+		return (parseInt(vitorias) * 3) + parseInt(empates);
+	}
+
+	var vitorias = prompt("Quantos jogos o CDC Futebol Clube venceu?"); 
+	var empates = prompt("Quantos jogos o CDC Futebol Clube empatou?"); 
+	var pontosDoOutroTime = parseInt(prompt("Quantos pontos tem o outro time?"));
+
+	var pontos =  calcularPontos(vitorias, empates);
+
+	mostrar("Nosso time tem "+pontos+" pontos!");
+
+	if(pontos > pontosDoOutroTime){
+		mostrar("Nosso time está indo MELHOR que o livros velhos");
+	}else if(pontos == pontosDoOutroTime){
+			mostrar("Nosso time está EMPATADO com o livros velhos!");	
+	}else{ 
+	 mostrar("Nosso time está indo PIOR que o livros velhos");
+	} 
+</script>
+</body>
+</html>

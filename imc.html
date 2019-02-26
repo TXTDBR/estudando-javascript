@@ -1,0 +1,22 @@
+<script>
+var pularLinha = function pularLinha(){
+		document.write("</br>");
+	}
+	var mostrar = function mostrar(frase){
+		document.write(frase);
+		pularLinha();
+		document.write("<hr>");
+		pularLinha();
+	}
+var nome = prompt("Qual é o seu nome?");	
+var peso = prompt(nome+", qual é o seu peso?");
+var altura = prompt(nome+", qual é a sua altura?");
+
+var imc = function imc(altura, peso){
+	var imc = peso / (altura * altura);
+	return +imc.toFixed(2);
+}
+var imc = imc(altura,peso);
+mostrar(nome+ ", seu IMC é: "+imc);
+mostrar(nome+", você ainda está " +(imc- 18.5).toFixed(2) + " pontos acima do limite.");
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var idade = prompt("Quantos anos você tem?");
+	var ano = 365;
+	var horas = 24;
+	var minutos = 60;
+	var batimentos = 80;
+
+	function pular(){document.write("</br>");}
+	
+	function calcularDias(idade = 0){
+		document.write("você já viveu "+idade * ano+ " dias!");
+	}
+
+	function calcularBatimentos(){
+		document.write("Seu coração já bateu "+idade * horas * minutos * batimentos+ " hoje");
+	}
+	
+	calcularDias(idade);
+	pular();
+	calcularBatimentos();
+	
+</script>
+</body>
+</html>
